@@ -1,0 +1,18 @@
+/* Ensure footer sticks to bottom */
+html, body, #root {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Main content grows to push footer down */
+  main {
+    flex: 1 0 auto;
+  }
+  
+  footer {
+    flex-shrink: 0;
+  }
